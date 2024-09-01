@@ -50,7 +50,7 @@ const Navbar = () => {
           />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Amos Wachira &nbsp;
-            <span className="sm:block hidden"> | Software Engineer</span>
+            <span className="sm:block hidden"> | Fullstack Developer</span>
           </p>
         </Link>
 
