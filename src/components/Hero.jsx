@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[80px]   max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[80px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-10 sm:gap-20`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-red-500" />
@@ -16,14 +16,13 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-red-500">Amos</span>
+            Hi, I'm <span className="text-[#DA4167]">Amos</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2  text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-[#DAD8D8]`}>
             I craft robust and efficient <br className="sm:block hidden" />
-            backend services. Using back-end with{" "}
+            software solutions using modern
             <br className="sm:block hidden" />
-            blockchain technologies to <br className="sm:block hidden" />
-            bring ideas to life.{" "}
+            technologies and blockchain.
           </p>
         </div>
       </div>
@@ -32,7 +31,7 @@ const Hero = () => {
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-red-300 flex justify-center items-start p-2">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-[#DA4167] flex justify-center items-start p-2">
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -42,7 +41,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full bg-red-300 mb-1"
+              className="w-3 h-3 rounded-full bg-[#DA4167] mb-1"
             />
           </div>
         </a>
