@@ -34,6 +34,7 @@ import {
   brian,
   java,
   python,
+  payments,
   ethereum,
   xmobit,
   Medappoint,
@@ -45,8 +46,11 @@ import {
   devops,
   nest,
   tcp,
+  go2cod,
   xmobitPic,
   derriv,
+  lattelink,
+  rapb,
 } from "../assets";
 export const navLinks = [
   {
@@ -77,11 +81,11 @@ const services = [
     icon: java,
   },
   {
-    title: "Nodejs Developer",
+    title: "Nodejs(Nestjs) Developer",
     icon: nodejs,
   },
   {
-    title: "Blockchain Developer",
+    title: "Blockchain(eth) Developer",
     icon: ethereum,
   },
 ];
@@ -147,29 +151,55 @@ const technologies = [
 
 const experiences = [
   {
-    title: " Software Developer",
-    company_name: " Xmobit INC",
-    icon: xmobit,
-    iconBg: "#E6DEDD",
-    date: " Jan 2024 - April 2024",
+    title: "Mobile App Developer Intern",
+    company_name: "Go2Cod",
+    icon: go2cod,
+    iconBg: "#4C6C82",
+    date: "Summer 2023",
     points: [
-      "Developing xmobit plaform using Next.js with blockchain  other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create a high-quality product.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Assisted in the development of mobile apps using React Native, building features like user authentication and push notifications.",
+      "Collaborated with senior developers to troubleshoot and resolve issues during the development process.",
+      "Worked on UI/UX designs to enhance user experience and ensure responsive layouts for various screen sizes.",
+      "Participated in team meetings, offering feedback on app performance and suggesting improvements.",
     ],
   },
   {
-    title: "Sn Backend Engineer ",
-    company_name: "Medappoint startup CO",
+    title: "Software Developer",
+    company_name: "Xmobit INC",
+    icon: xmobit,
+    iconBg: "#E6DEDD",
+    date: "Jan 2024 - April 2024",
+    points: [
+      "Developed Xmobit platform using Next.js and integrated blockchain technologies.",
+      "Collaborated with cross-functional teams, including designers, product managers, and developers, to create high-quality fintech solutions.",
+      "Implemented responsive design and ensured cross-browser compatibility for a seamless user experience.",
+      "Participated in code reviews, offering constructive feedback and ensuring adherence to best coding practices.",
+    ],
+  },
+  {
+    title: " Backend Engineer",
+    company_name: "Medappoint Startup CO",
     icon: Medappoint,
     iconBg: "#383E56",
-    date: " May2024",
+    date: "May 2024",
     points: [
-      "Develop backend logic.",
-      "Integrate chat support features.",
-      "Authentication, appointments and clinic management features development.",
-      "Participate in code reviews and providing constructive feedback to other developers.",
+      "Designed and developed backend logic to support key features like appointment scheduling and clinic management.",
+      "Integrated real-time chat support functionality into the platform to improve user engagement and service delivery.",
+      "Implemented user authentication systems to enhance security and ensure data privacy.",
+      "Collaborated in code reviews to improve code quality and mentor junior engineers.",
+    ],
+  },
+  {
+    title: "Senior Backend & System Architecture Engineer",
+    company_name: "Lattelinkapp",
+    icon: lattelink,
+    iconBg: "#383E56",
+    date: "May 2024",
+    points: [
+      "Led the development of backend services for core features like authentication, clinic management, and appointment scheduling.",
+      "Architected scalable systems to handle increased demand, ensuring high availability and performance.",
+      "Integrated chat support features and real-time notifications to improve user experience.",
+      "Collaborated on code reviews and mentored junior developers on best practices for system architecture.",
     ],
   },
   {
@@ -179,10 +209,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "August 2024",
     points: [
-      "Develop company's portfolio",
-      "Marketing strategies with co-founders",
-      "Networking strategies",
-      "Project management.",
+      "Developed the company's portfolio and digital presence using web technologies.",
+      "Collaborated with co-founders to create and implement marketing strategies to promote the business.",
+      "Built networking strategies and partnerships to expand the company’s reach in the market.",
+      "Managed projects from concept to execution, overseeing timelines, resources, and deliverables.",
     ],
   },
 ];
@@ -288,6 +318,59 @@ const projects = [
     ],
     image: derriv,
     source_code_link: "https://github.com/ByteSurgeonAmos/AITradeEngine",
+    demo: "",
+  },
+  {
+    name: "Payment system for Credit Card Processing",
+    description:
+      "Backend micro-service  for processing credit card payments using Nestjs paypal and Stripe making it easy for developers to integrate payments in their applications.",
+    tags: [
+      {
+        name: "Nestjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Paypal SDK",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe SDK",
+        color: "green-text-gradient",
+      },
+    ],
+    image: payments,
+    source_code_link:
+      "https://github.com/ByteSurgeonAmos/payment-microservice-psystem",
+    demo: "",
+  },
+  {
+    name: "LyriQ-AI",
+    description:
+      "LyriQ-AI is a project focused on analyzing sentiment and emotions in German rap lyrics, with a cross-language retrieval feature to respond to queries in English. The system combines sentiment analysis and retrieval-augmented generation (RAG) techniques.",
+    tags: [
+      {
+        name: "python/Django-rest-framework",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NLP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sentiment-analysis",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Angularjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "retrieval-augmented generation",
+        color: "green-text-gradient",
+      },
+    ],
+    image: rapb,
+    source_code_link: "https://github.com/ByteSurgeonAmos/LyriQ-AI",
     demo: "",
   },
 ];

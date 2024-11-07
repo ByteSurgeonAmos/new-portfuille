@@ -11,7 +11,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full  p-[1px] rounded-[20px] shadow-card"
+      className="w-full p-[1px] rounded-[20px] shadow-card"
     >
       <div
         options={{
@@ -26,7 +26,6 @@ const ServiceCard = ({ index, title, icon }) => (
           alt="web-development"
           className="w-16 h-16 object-contain"
         />
-
         <h3 className="text-white text-[20px] font-bold text-center">
           {title}
         </h3>
@@ -36,6 +35,9 @@ const ServiceCard = ({ index, title, icon }) => (
 );
 
 const About = () => {
+  // Duplicate the services array to create a seamless loop
+  const extendedServices = [...services, ...services];
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -53,11 +55,21 @@ const About = () => {
         Solidity. Let's work together to turn your vision into a reality!
       </motion.p>
 
-      <div className="mt-20 flex  gap-4 max-md:flex-col">
-        {services.map((service, index) => (
+      <motion.div
+        className="mt-20 flex gap-4 max-md:flex-col flex-nowrap"
+        animate={{
+          x: ["0%", "-50%"], // Move to -50% (half of the list) to create a loop effect
+        }}
+        transition={{
+          duration: 20, // Total duration for one loop
+          repeat: Infinity, // Infinite loop
+          ease: "linear", // Smooth transition
+        }}
+      >
+        {extendedServices.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </motion.div>
     </>
   );
 };

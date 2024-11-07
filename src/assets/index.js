@@ -34,15 +34,18 @@ import xmobitPic from "./xmobit-pic.png";
 import a from "./A.svg";
 import Medappoint from "./MedAppoint.png";
 import xmobit from "./x-mobit-variation.png";
+import payments from "./payments.png";
 import ethereum from "./ethereum-svgrepo-com.svg";
 import java from "./java-svgrepo-com.svg";
 import meta from "./company/meta.png";
+import go2cod from "./go2cod.jpg";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import numeral from "./company/numeral.png";
 import jpmorgan from "./company/jpmorgan.png";
 import africa from "./company/africa.png";
+import lattelink from "./lattelink.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -55,12 +58,15 @@ import test from "./test.png";
 import zan from "./zan.jpeg";
 import simon from "./simon.jpeg";
 import brian from "./brian.jpeg";
+import rapb from "./rapb.png";
 
 export {
   logo,
   backend,
   creator,
+  rapb,
   mobile,
+  go2cod,
   web,
   xmobitPic,
   derriv,
@@ -79,8 +85,10 @@ export {
   blunova,
   // nest,
   devops,
+  payments,
   git,
   html,
+  lattelink,
   Medappoint,
   xmobit,
   javascript,
